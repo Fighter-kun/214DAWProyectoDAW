@@ -1,19 +1,22 @@
 ; BIND data for carlos.local
 ;
 $TTL	604800
-@	IN	SOA	cgc-used.carlos.local. marodriguez.educa.jcyl.es. (
+@	IN	SOA	cgc-ldap.carlos.local. marodriguez.educa.jcyl.es. (
 			      1		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 3600 )	        ; Negative Cache TTL
 ;
-@	IN	NS	cgc-used.carlos.local.
+@	IN	NS	cgc-ldap.carlos.local.
 ; Registros Host 
 @                   IN A  192.168.3.214
 
 cgc-used            IN A  192.168.3.214 
+cgc-ldap	    IN A 192.168.3.114
 ; Registros Alias 
 daw201               IN  CNAME   cgc-used.carlos.local.
 daw202               IN  CNAME   cgc-used.carlos.local.
 daw214               IN  CNAME   cgc-used.carlos.local.
+login                IN  CNAME   cgc-used.carlos.local.
+daw114               IN  CNAME   cgc-used.carlos.local.

@@ -1,0 +1,8 @@
+dn: uid=carlos,ou=superior,dc=carlos,dc=local
+add: mobile
+Mobile: 600600600
+
+dn: uid=amor,ou=superior,dc=carlos,dc=local
+changetype: modify
+replace: mail
+mail: amor@gmail.com
