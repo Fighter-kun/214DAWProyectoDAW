@@ -10,3 +10,5 @@
 # /var was on /dev/sda3 during curtin installation
 /dev/disk/by-uuid/8ec938a8-5e60-416c-af06-325d59c69fe6 /var ext4 defaults 0 1
 /swap.img	none	swap	sw	0	0
+/opt/tomcat/webapps /var/www/html/webapps none defaults,bind 0 0
+/opt/tomcat/miapp /var/www/html/miapp none defaults,bind 0 0
